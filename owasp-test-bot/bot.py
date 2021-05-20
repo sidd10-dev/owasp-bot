@@ -3,7 +3,7 @@ import firebase_admin
 from firebase_admin import credentials,db
 from discord.ext import commands
 client = commands.Bot(command_prefix = '!')
-cred = credentials.Certificate("D:\Other Files\discord bots\owasp-test-bot\serviceAccountKey.json")
+cred = credentials.Certificate("serviceAccountKey.json")
 firebase_admin.initialize_app(cred,{
     'databaseURL':'https://owasp-test-855b8-default-rtdb.firebaseio.com/'
 })
